@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   
+    margin: 0 auto;
+    font-size: 16px;
+    
+}
+.menu-btn{
+ position: absolute;
+ cursor: pointer;
+ top: 20px;
+ right: 30px;
+ color: white;
+ z-index: 2;
+ font-size: 1.5rem;
+ display: none;
+ 
+}
+
+.fa-bars{
+    color: white;
+}
+
+/* CST NAV */
+nav {
+    background-color: transparent;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.8);
+    
+}
+#navbar .navbar_logo{
+    padding-top: 10px;
+}
+.fa-chevron-left, .fa-angle-right {
+    color: #5b5bd5;
+}
+
+.container {
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+ul {
+    padding: 0px 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+li {
+    padding: 0px 10px;
+    font-size: 18px;
+    color:white;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_logo {
+    font-size: 20px;
+    
+}
+
+
+nav p a {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+
+/*HOME*/
+.home_background {
+    background-color: #8e8e8e;
+    background-image: url(./images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.welcome-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    position: relative;
+   
+}
+
+
+
+.home_description {
+    padding: 60px 30px;
+    font-size: 35px;
+    color: white;
+}
+
+
+.home_description h1{
+    color: #5b5bd5;
+}
+
+/*About me*/
+
+.about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about_description {
+   text-align: left;
+   color: #302e2e;
+   padding-right:80px;
+   line-height:40px ;
+   font-size: 20px;
+}
+
+.about_description h2, #services h3, #services h2, #portfolio h2, #portfolio h3, #contact h2, #contact h3{
+    color: #302e2e;
+    margin: 20px 0;
+}
+
+.section_title {
+    display: flex;
+    font-size: 35px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    color: #302e2e;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 5px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px auto;
+   
+}
+.skill_title {
+    color: #302e2e;
+    grid-column: span 3;
+    text-align: left;
+    margin: 20px 0 ;
+}
+.skill_item{
+    font-size: 80px;
+    color: #302e2e;
+    padding: 35px;
+    min-width: 130px;
+    height: 180px;
+    text-align: center;
+}
+.fa-html5 {
+    color: orange;
+}
+.fa-css3-alt {
+    color: blue;
+}
+.fa-js {
+    color: rgb(229, 229, 97);
+}
+.fa-git-alt {
+    color: #d52121;
+}
+.fa-github{
+    color:black
+}
+
+.about_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skill_name {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Service*/
+.services_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.services_item i,.contact_item i{
+    font-size: 40px;
+    margin: 20px 0;
+}
+.services_item{
+    text-align: center;
+}
+.fa-mobile-screen-button,.fa-github-square{
+    color: black;
+}
+.fa-pen-ruler{
+    color: orangered;
+}
+.fa-code{
+    color: green;
+}
+.fa-thumbs-up, .fa-envelope {
+    color: #d52121;
+}
+
+/* Portfolio*/
+
+#projects {
+    padding-top: 40px;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 5px;
+    margin: 50px;
+}
+
+.projects-item {
+    padding: 20px;
+}
+
+.projects-item p a {
+    text-decoration: none;
+    color: #302e2e;
+    padding: 10px 160px;
+    text-align: center;
+    b
+    
+
+}
+
+/*Contact*/
+
+.contact_grid a {
+    text-decoration: none;
+    color: #302e2e;
+}
+.contact_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:30px;
+}
+.contact_item{
+    padding: 40px;
+    text-align: center;
+}
+
+.fa-instagram {
+   color: rgb(236, 64, 1);
+}
+
+
+
+.fa-linkedin{
+    color: #3939ec;
+}
+
+/*footer*/
+.footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 30px;
+    background-color: rgba(245, 245, 245, 0.6);
+}
+.footer a{
+    text-decoration: none;
+    color: #302e2e;
+}
+
+
+@media (max-width: 700px) {
+   
+    .menu-btn{
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        
+       
+    }
+
+    #navbar ul{
+        display: block;
+        position: absolute ;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);;
+        position: fixed;
+        padding: 30px;
+        transform: translate(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    #navbar ul.nav-menu.show {
+        transform: translate(-20px);
+    }
+
+    #navbar li{
+        padding: 20px;
+    }
+    .home_background{
+        position: absolute;
+    }
+
+    .about_grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        margin: 30px 0px 30px 175px ;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr ;
+    }
+
+}
+
+
