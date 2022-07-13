@@ -304,6 +304,7 @@ nav p a {
    
     .menu-btn{
         display: block;
+        margin-right: 40px;
     }
 
     nav {
@@ -342,14 +343,74 @@ nav p a {
         flex-direction: column;
     }
 
-    .button{
-        margin: 30px 0px 30px 175px ;
+    .button {
+        padding: 5px 30px;
+        margin: 20px auto;
+       
     }
 
     .projects-grid{
         grid-template-columns: 1fr ;
     }
+    .services{
+        margin-right: 45px;
+    }
+    .contact_grid{
+       margin-right:  450px;
+
+    }
+
 
 }
 
+@media (max-width: 500px) {
+   
+    .contact_grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding:  0px 80px;
+ 
+     }
+     
+     .projects-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 10px;
+    }
+    .projects-item p a {
+        margin-left: 90px;
+        padding: 10px 60px;
+    }
+    .button {
+        padding: 5px 30px;
+        margin: 20px auto;
+       
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+
+    .project-image{
+        width: 300px;
+        height: 150px;
+    }
+    .about_skills{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .projects-item p a {
+        margin-left: 90px;
+        padding: 10px 20px;
+    }
+    .contact_grid{
+    
+        padding:  0px 50px;
+ 
+     }
+}
 
