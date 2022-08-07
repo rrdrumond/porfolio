@@ -27,18 +27,10 @@ body{
 }
 
 /* CST NAV */
-nav {
-    background-color: transparent;
-    padding: 7px 15px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    z-index: 5;
+/*nav {
     background: rgba(0, 0, 0, 0.8);
     
-}
+}*//*
 #navbar .navbar_logo{
     padding-top: 10px;
 }
@@ -87,9 +79,10 @@ nav p a {
     color: white;
     
     
+}*/
+a:hover{
+    color: blue;
 }
-
-
 /*HOME*/
 .home_background {
     background-color: #8e8e8e;
@@ -121,6 +114,7 @@ nav p a {
     font-size: 35px;
     color: white;
 }
+
 
 
 .home_description h1{
@@ -198,6 +192,10 @@ nav p a {
     color:black
 }
 
+.fa-bootstrap{
+    color: purple;
+}
+
 .about_skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -242,8 +240,8 @@ nav p a {
 
 .projects-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px;
     margin: 50px;
 }
 
@@ -357,6 +355,7 @@ nav p a {
     }
     .contact_grid{
        margin-right:  450px;
+       grid-template-columns: 1fr 1fr 1fr;
 
     }
 
@@ -414,3 +413,6 @@ nav p a {
      }
 }
 
+.navbar-toggler, .navbar-toggler-icon {
+    color:white;
+}

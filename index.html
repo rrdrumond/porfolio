@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOSTRAP-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="style.css">
     <title>Roberto Drumond / Frontend Developer</title>
 </head>
 <body>
    
-    <nav id="navbar">
-        <div class="container">
+  <!--  <nav id="navbar" class="navup">
+        <div class="container" >
             <div class="navbar_logo">
                 <p class="navbar_title">
                     <a href="#"><i class="fa-solid fa-chevron-left"></i> DR <i class="fa-solid fa-angle-right"></i></a>
@@ -31,13 +34,41 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-opacity-75">
+        <div class="container-fluid px-5">
+            <a href="#" class="navbar-brand text-white"><i class="fa-solid fa-chevron-left text-primary"></i> DR <i class="fa-solid fa-angle-right text-primary"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#welcome-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-outline-primary" href="#about">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <section id="welcome-section" class="welcome-section"">
         <div class="home_background"></div>
         <div class="home_description">
             <span>Hi!</span>
             <h1>I'm Roberto Drumond</h1>
-            <span>Frontend Developer Junior</span>
+            <span class="jrdvep">Frontend Developer Junior</span>
         </div>
     </section>
     <section id="about" class="about">
@@ -46,9 +77,10 @@
             <div class="about_grid">
                 <div class="about_description">
                     <h2>I'm Roberto Drumond, Web developer frontend. </h2>
-                    <p>I am a Frontend developer building websites and. I specialize in JavaScript, geting knowledge.</p>
-                    <p>I am always seeking to improve my skills and continue growing professionally . Indeed i continue study to be full stack.</p>
-                    <a href="./CV/Roberto's Resume.pdf" class="button"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                    <p>I am a Front-end developer building websites and, I specialize in JavaScript, getting knowledge like an autodidact.</p>
+                    <p>
+                        I am always seeking to improve my skills and continue growing professionally. Indeed I continue to study to be full stack.</p>
+                    <a href="./CV/Roberto's Resume.pdf" class="btn btn-outline-secondary btn-lg shadow p-3 mb-5 rounded"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
                 </div>
                 <div class="about_skills">
                     <div class="skill_title">
@@ -74,6 +106,10 @@
                         <i class="fa-brands fa-github"></i>
                         <div class="skill_name">GitHub</div> 
                     </div>
+                    <div class="skill_item">
+                        <i class="fa-brands fa-bootstrap"></i>
+                    <div class="skill_name">Bootstrap</div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,12 +122,12 @@
                 <div class="services_item">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h3 class="section_subtitle">Full Responsive</h3>
-                    <p>Your site display properly on any device, including desktop computers, tablets and mobile phones.</p>
+                    <p>Your site displays properly on any device, including desktop computers, tablets, and mobile phones.</p>
                 </div>
                 <div class="services_item">
                     <i class="fa-solid fa-pen-ruler"></i>
                     <h3>Creative Design</h3>
-                    <p>A good and attractive web design helps your keep your leads on your site, wihch is the digital face of your business.</p>
+                    <p>A good and attractive web design helps you keep your leads on your site, which is the digital face of your business.</p>
                 </div>
                 <div class="services_item">
                     <i class="fa-solid fa-code"></i>
@@ -112,19 +148,32 @@
             <h3>Here you can see the projects i have worked on.</h3>
 
             <div class="projects-grid">
-                <div class="projects-item">
-                    <img class="project-image" src="./images/tribute canada.PNG" width="400px" height="200px" alt="Tribute Page" >
-                    <p class="project-tile"> <a href="https://codepen.io/rrdrumond/pen/xxPzozP">Tribute Page</a></p>
-                </div>
-                <div class="projects-item">
-                    <img class="project-image"  src="./images/from page.PNG" width="400px" height="200px" alt="From Page">
-                    <p><a href="https://codepen.io/rrdrumond/pen/bGYORVq">Form Page</a></p> 
-                </div>
+                <div class="card projects-item shadow p-5" style="width: 18rem;">
+                    <img src="./images/tribute canada.PNG" class="card-img-top" alt="Tribute Page">
+                    <div class="card-body">
+                      <h5 class="card-title">Tribute Page</h5>
+                      <p class="card-text">A tribute page of Canada is a project built to a challenge of freecodecamp.</p>
+                      <a href="https://codepen.io/rrdrumond/pen/xxPzozP" class="btn btn-outline-primary btn-lg shadow p-1 mb-5 rounded">Go to page</a>
+                    </div>
+                  </div>
+                  <div class="card shadow p-5" style="width: 18rem;">
+                    <img src="./images/from page.PNG" class="card-img-top" alt="Form Page">
+                    <div class="card-body">
+                      <h5 class="card-title">Form Page</h5>
+                      <p class="card-text">A form page is a project built to a challenge of freecodecamp</p>
+                      <a href="https://codepen.io/rrdrumond/pen/bGYORVq"" class="btn btn-outline-primary btn-lg shadow p-1 mb-5 rounded">Go to page</a>
+                    </div>
+                    </div>
+
+                    <div class="card shadow p-4" style="width: 18rem;">
+                        <img src="./images/landing page.PNG" class="card-img-top" alt="Landing Page">
+                        <div class="card-body">
+                          <h5 class="card-title">Landing Page</h5>
+                          <p class="card-text">A landing page is a project built to a challenge of freecodecamp.</p>
+                          <a href="https://codepen.io/rrdrumond/pen/OJzxXZL"" class="btn btn-outline-primary btn-lg shadow p-1 mb-5 rounded">Go to page</a>
+                        </div>
+                    
                 
-                <div class="projects-item">
-                    <img  class="project-image" src="./images/landing page.PNG" width="400px" height="200px"  alt="Landing page">
-                    <p><a href="https://codepen.io/rrdrumond/pen/OJzxXZL">Landing Page</a></p> 
-                </div>
             </div>
         </div>
     </section>
@@ -167,10 +216,21 @@
             <p>Copyright© 2022. <a href="#">@rrdrumond</a> <br> All Rightd Reserved </p>
         </div>
     </footer>
+    
+    <!--BOOSTRAP5 SCRIPTS-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+
     <!--ScrollReveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/398f7f389c.js" crossorigin="anonymous"></script>
+    
     <script src="main.js"></script>
+   
+
+   
 </body>
 </html>
